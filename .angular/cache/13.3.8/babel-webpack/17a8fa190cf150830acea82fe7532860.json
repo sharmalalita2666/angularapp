@@ -1,0 +1,1 @@
+{"ast":null,"code":"export function ValidatePassword(control) {\n  const pattern = \"^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$\";\n\n  if (control.value.match(pattern)) {\n    return null;\n  } else {\n    return null;\n    return {\n      invalidPassword: true\n    };\n  }\n}","map":null,"metadata":{},"sourceType":"module"}

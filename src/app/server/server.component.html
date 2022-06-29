@@ -1,0 +1,19 @@
+<p>server component
+    <br>
+    {{stringInterpolation}}
+    <br>
+    {{functionHello()}}
+</p>
+<br>
+<button type="button" class="btn btn-primary"
+[disabled]="!allowNewServer"
+(click)="onClickLogin()">Login</button>
+<div class="container"
+[style.visibility]="loginPage">
+    <div class="row">
+        <div class="col-md-12">
+            this is container for login
+            <div type="button" class="btn btn-secondary">Login</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container-fluid" style="margin-bottom:4px">
+    <div class="row" style="background-color: #eeece4;;">
+        <div class="col-md-3"  style="margin-top: 20px;">
+            <a href="#">
+                <img src="../../assets/navBar.png" width="50" height="50" alt="">
+            </a>
+        </div>
+        <div class="col-md-6" style="display: flex;
+        align-items: center;
+        justify-content: center;">
+            <img src="../../assets/goodreads.png" height="100" alt="good reads">
+        </div>
+        <div class="col-md-3" style="align-items:right;">
+            <!-- <button class="btn" style="font-size:large ;" (click)="this.login.emit(true)">Login <i class="bi bi-door-open-fill"></i></button>
+            <button class="btn" style="font-size:large ;" (click)="this.signUp.emit(true)">SignUp <i class="bi bi-person-fill"></i></button> -->
+            
+            <button *ngIf="!logined()" class="btn" style="font-size:large ;" routerLink="/login" >Login <i class="bi bi-door-open-fill"></i></button>
+            <button *ngIf="!logined()" class="btn" style="font-size:large ;" routerLink="/signUp">SignUp <i class="bi bi-person-fill"></i></button>
+
+            <button *ngIf="logined()" class="btn" style="font-size:large ;" (click)="logout()">Logout <i class="bi bi-door-closed-fill"></i></button>
+        </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="row" style="
+background-size:cover;
+background-repeat: no-repeat;
+background-image: url('../../assets/bookHome.jpg');
+min-height:800px;">
+<div style="
+  background-color:#c7c1b1;
+  color: #000304;
+  width: 70%;
+  border-radius: 20px;
+  opacity: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom:50px;
+ ">
+ <div style="text-align:center">
+    <h3>Books In Library
+    <button routerLink="/book/add" class="btn" style="border: 2px solid black;background-color:rgb(84 72 52);color: white;">Add</button>
+    </h3>
+</div>
+ <br>
+ <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">genre</th>
+        <th scope="col">copies</th>
+        <th scope="col">status</th>
+        <th scope="col">author</th>
+        <th scope="col">action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books;">
+        <td>{{ book.title}}</td>
+        <td>{{ book.genre}}</td>
+        <td>{{ book.copies}}</td>
+        <td>{{ book.status}}</td>
+        <td>{{ book.author.firstName+" "+book.author.lastName}}</td>
+        <td>
+          <a (click)="editBook(book)" style="color:black;"><i class="bi bi-pencil-fill" style="margin-right: 20px;"></i></a>
+          <a (click)="deleteBook(book._id)" style="color:black ;"><i class="bi bi-trash3-fill"></i></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

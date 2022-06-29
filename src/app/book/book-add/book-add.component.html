@@ -1,0 +1,87 @@
+<div class="row" style="
+background-size:cover;
+background-image: url('../../../assets/bookHome.jpg');">
+<div style="
+  background-color:#c7c1b1;
+  color: #000304;
+  width: 60%;
+  border-radius: 20px;
+  opacity: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;">
+    <form style="padding: 20px;" [formGroup]="addBookForm"
+    (ngSubmit)="addBook()">
+      <h2>New Book</h2>
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input
+             type="text" 
+             class="form-control"
+             id="title"
+             formControlName="title"
+             placeholder="Title">
+        </div>
+        <div class="form-group">
+            <label for="genre">Genre</label>
+            <input
+             type="text" 
+             class="form-control" 
+             id="genre" 
+             formControlName="genre"
+             placeholder="genre">
+        </div>
+        
+        <div class="form-group">
+            <label for="copies">Number Of Copies</label>
+            <input
+             type="copies" 
+             class="form-control" 
+             id="copies"
+             formControlName="copies"
+             placeholder="Numer of copies">
+        </div>
+
+        <div class="form-group">
+            <label for="status">Status</label>
+            <input 
+            type="text" 
+            class="form-control" 
+            id="status" 
+            formControlName="status"
+            placeholder="true">
+        </div>
+        <div class="form-group">
+          <label for="authorFName">Author First Name</label>
+          <input
+          type="text" 
+          class="form-control" 
+          id="authorFName" 
+          formControlName="authorFName"
+          placeholder="Author First Name">
+        </div>
+        <div class="form-group">
+          <label for="authorLName">Author Last Name</label>
+          <input
+          type="text" 
+          class="form-control" 
+          id="authorLName" 
+          formControlName="authorLName"
+          placeholder="Author Last Name">
+        </div>
+        <div class="form-group">
+          <label for="authorEmail">Author Email</label>
+          <input
+          type="text" 
+          class="form-control" 
+          id="authorEmail" 
+          formControlName="authorEmail"
+          placeholder="Author Email">
+        </div>
+          <br>
+        <button type="submit" class="btn" [disabled]="!addBookForm.valid" style="background-color:#666262;color: white;margin-right: 20px;">Add Book</button>
+        <button class="btn" (click)="cancel()" style="background-color:#666262;color: white;">cancel</button>
+      </form>
+</div>
+</div>

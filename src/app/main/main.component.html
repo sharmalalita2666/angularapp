@@ -1,0 +1,128 @@
+<!-- <app-header (login)="login($event)" (signUp)="signUp($event)"></app-header> -->
+
+<div class="row" style="height:830px; background-image: url('../../assets/mainBackground.jpg'); background-repeat: no-repeat;background-size: cover;">
+<div   id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+style="height:800px;">
+  <div class="carousel-inner" *ngIf="carousel">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-md-6">
+            <div style="margin-top: 250px;margin-left: 400px;" >
+                <b style="font-size:xx-large;">Get Your New<br>Book Collections</b>
+                <br><br>
+                <p style="font-size:medium;">There are many variations of passages of Lorem Ipsum available, but,<br>  the majority have suffered alteration in some form.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img 
+            src="../../assets/mainImg.jpg" 
+            alt="mainImg1" 
+            style="width:50%; margin-top: 150px;float: right;margin-right:30%;height:600px;">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-6">
+            <div style="margin-top: 250px;margin-left: 400px;" >
+                <b style="font-size:xx-large;">Get Your New<br>Book Collections</b>
+                <br><br>
+                <p style="font-size:medium;">There are many variations of passages of Lorem Ipsum available, but,<br>  the majority have suffered alteration in some form.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <img 
+          src="../../assets/mainImg2.jpg" 
+          alt="mainImg2" 
+          style="width:50%; margin-top: 100px;float: right;margin-right:30%;height:650px;">
+      </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-6">
+            <div style="margin-top: 250px;margin-left: 400px;" >
+                <b style="font-size:xx-large;">Get Your New<br>Book Collections</b>
+                <br><br>
+                <p style="font-size:medium;">There are many variations of passages of Lorem Ipsum available, but,<br>  the majority have suffered alteration in some form.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <img 
+          src="../../assets/mainImg3.jpg" 
+          alt="mainImg3" 
+          style="width:50%; margin-top: 100px;float: right;margin-right:30%;height:650px;">
+      </div>
+      </div>
+    </div>
+</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <!-- <div class="row"> -->
+    <!-- <app-login *ngIf="loginComponent" style="margin-top: 180px;"></app-login> -->
+    <!-- <router-outlet name="loginOutlet"></router-outlet> -->
+  <!-- </div> -->
+  <!-- <div class="row"> -->
+    <!-- <app-sign-up *ngIf="signUpComponent" style="margin-top: 20px;"></app-sign-up> -->
+    <!-- <router-outlet name="signUpOutlet"></router-outlet>
+  </div> -->
+</div>
+</div>
+
+<br>
+<br>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4" style="text-align:center;">
+      <a href="/user" style="text-decoration: none;">
+      user Explorer
+      <img src="https://img.freepik.com/free-vector/abstract-texture-background_91008-369.jpg?w=2000" alt="" style="height: 300px;width: 400px;">
+      </a>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4" style="text-align: center">
+      <a href="/book" style="text-decoration: none;">
+      book Explorer
+      <img src="../../assets/bookButton.jpg" alt=""  style="height: 300px;width: 400px;">
+      </a>
+    </div>
+  </div>
+</div> -->
+<div class="row" style="height: 300px;">
+  <div class="col-md-3" style="background-image:url('../../assets/card.jpg');text-align: center;">
+    <a routerLink="/book/list" style="text-decoration: none;">
+      <h2 style="margin-top: 100px; color: rgb(88, 6, 62);">
+        Explore Library
+        </h2>
+  </a>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-3" style="background-image:url('../../assets/card.jpg');text-align: center;">
+    <a routerLink="/user/list" style="text-decoration: none;">
+      <h2 style="margin-top: 100px; color: rgb(88, 6, 62);">
+    Explore User
+    </h2>
+    </a>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-3" style="background-image:url('../../assets/card.jpg');text-align: center;">
+    <a href="" style="text-decoration: none;">
+      <h2 style="margin-top: 100px; color: rgb(88, 6, 62);">
+        Select book
+        </h2>
+    </a>
+  </div>
+</div>
+<!-- <br>
+<br>
+<br>
+<app-button-book></app-button-book>
+<br><br>
+<app-button-user></app-button-user> -->
